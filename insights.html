@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Technical research publications, engineering whitepapers, and case studies by the AstraMind Labs engineering team in Lilongwe, Malawi.">
+  <title>Insights & Research Publications | AstraMind Labs</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==================== NAVIGATION BAR ==================== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand" aria-label="AstraMind Labs Home">
+        <img src="assets/logo.png" alt="AstraMind Labs" class="brand-logo" onerror="this.style.display='none'; document.getElementById('nav-fallback-brand').style.display='flex';">
+        <span id="nav-fallback-brand" class="brand-fallback-wrap" style="display:none;">
+          <svg viewBox="0 0 40 40" fill="none" class="svg-logo-icon" xmlns="http://www.w3.org/2000/svg">
+            <rect width="40" height="40" rx="8" fill="#1a56db"/>
+            <path d="M20 7L33 31H7L20 7Z" fill="white" fill-opacity="0.95"/>
+            <path d="M20 15L28 31H12L20 15Z" fill="#1a56db"/>
+            <circle cx="20" cy="27" r="3.5" fill="white"/>
+          </svg>
+          <span class="brand-text">AstraMind <span class="accent">Labs</span></span>
+        </span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <div class="nav-menu-wrapper">
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="methodology.html" class="nav-link">Methodology</a></li>
+            <li><a href="products.html" class="nav-link">Products</a></li>
+            <li><a href="industries.html" class="nav-link">Industries</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="careers.html" class="nav-link">Careers</a></li>
+            <li><a href="insights.html" class="nav-link active">Insights</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-controls">
+          <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+            <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </button>
+
+          <a href="contact.html" class="btn btn-primary btn-sm">Schedule Consultation</a>
+        </div>
+      </div>
+
+      <!-- Mobile Toggle Button -->
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Open navigation menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-link">Home</a></li>
+      <li><a href="services.html" class="mobile-link">Services & Capabilities</a></li>
+      <li><a href="methodology.html" class="mobile-link">Engineering Methodology</a></li>
+      <li><a href="products.html" class="mobile-link">Proprietary Products</a></li>
+      <li><a href="industries.html" class="mobile-link">Industry Solutions</a></li>
+      <li><a href="about.html" class="mobile-link">Leadership & Governance</a></li>
+      <li><a href="careers.html" class="mobile-link">Careers</a></li>
+      <li><a href="insights.html" class="mobile-link active">Insights & Research</a></li>
+      <li><a href="contact.html" class="mobile-link">Contact & Consultation</a></li>
+    </ul>
+
+    <div class="mobile-theme-row">
+      <span>Color Theme</span>
+      <button id="mobile-theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      </button>
+    </div>
+
+    <div style="margin-top: 1.5rem;">
+      <a href="contact.html" class="btn btn-primary btn-block">Get in Touch</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==================== PAGE HERO ==================== -->
+    <section class="page-hero">
+      <div class="container page-hero-content">
+        <span class="eyebrow">AstraMind Labs R&D</span>
+        <h1 class="page-hero-title">Insights & Engineering Publications</h1>
+        <p class="page-hero-subtitle">
+          In-depth technical papers, architecture blueprints, and research notes authored by AstraMind Labs software engineers and data scientists.
+        </p>
+      </div>
+    </section>
+
+    <!-- ==================== ARTICLES GRID ==================== -->
+    <section class="section">
+      <div class="container">
+        <div class="insights-article-grid">
+          <!-- Article 1 -->
+          <article class="insight-post-card">
+            <div>
+              <div class="insight-top-meta">
+                <span class="insight-category-pill">AI & NLP Research</span>
+                <span style="font-size:0.82rem; color:var(--text-subtle);">August 12, 2026</span>
+              </div>
+              <h3>Intelligent Systems in Low-Resource Languages</h3>
+              <p>An architectural exploration of training transformer models and tokenizer optimizations for Chichewa and regional African dialects for educational assistive tutors.</p>
+            </div>
+            <a href="contact.html?inquiry=research" class="read-article-link">
+              Read Research Note
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+
+          <!-- Article 2 -->
+          <article class="insight-post-card">
+            <div>
+              <div class="insight-top-meta">
+                <span class="insight-category-pill">Cloud & Infrastructure</span>
+                <span style="font-size:0.82rem; color:var(--text-subtle);">July 28, 2026</span>
+              </div>
+              <h3>Resilient VPS Infrastructure in Central Africa</h3>
+              <p>Designing zero-downtime failovers, low-latency SSL proxy caching, and automated encrypted offsite backup snapshots across distributed regional nodes.</p>
+            </div>
+            <a href="contact.html?inquiry=research" class="read-article-link">
+              Read Engineering Article
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+
+          <!-- Article 3 -->
+          <article class="insight-post-card">
+            <div>
+              <div class="insight-top-meta">
+                <span class="insight-category-pill">IoT & Agriculture</span>
+                <span style="font-size:0.82rem; color:var(--text-subtle);">June 15, 2026</span>
+              </div>
+              <h3>Edge Computer Vision for Smallholder Farming</h3>
+              <p>Deploying quantized convolutional neural networks onto lightweight edge devices to diagnose maize leaf disease without continuous internet connectivity.</p>
+            </div>
+            <a href="contact.html?inquiry=research" class="read-article-link">
+              Read Case Study
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CTA BANNER ==================== -->
+    <section class="cta-banner-section">
+      <div class="container">
+        <h2>Collaborate on Applied Research</h2>
+        <p>AstraMind Labs actively collaborates with academic departments, NGO research programs, and enterprise labs.</p>
+        <a href="contact.html" class="btn btn-white">Propose Research Collaboration</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== CORPORATE FOOTER ==================== -->
+  <footer class="corporate-footer">
+    <div class="container">
+      <div class="footer-columns-grid">
+        <div>
+          <a href="index.html" aria-label="AstraMind Labs Home">
+            <img src="assets/logo.png" alt="AstraMind Labs" class="footer-brand-logo" onerror="this.style.display='none'; document.getElementById('footer-fallback-brand').style.display='block';">
+            <span id="footer-fallback-brand" style="display:none; font-family:var(--font-heading); font-size:1.4rem; font-weight:800; color:#fff; margin-bottom:1rem;">AstraMind Labs</span>
+          </a>
+          <p class="footer-tagline">
+            AstraMind Labs is a Malawi-based AI-first technology company building intelligent software, cloud solutions and digital products for African challenges and global opportunity.
+          </p>
+        </div>
+
+        <div class="footer-col-block">
+          <h4>Navigation</h4>
+          <div class="footer-links-list">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services & Capabilities</a>
+            <a href="methodology.html">Engineering Methodology</a>
+            <a href="products.html">Proprietary Products</a>
+          </div>
+        </div>
+
+        <div class="footer-col-block">
+          <h4>Company</h4>
+          <div class="footer-links-list">
+            <a href="about.html">About & Leadership</a>
+            <a href="industries.html">Industry Solutions</a>
+            <a href="careers.html">Careers</a>
+            <a href="insights.html">Insights & Research</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <div class="footer-col-block">
+          <h4>Legal & Trust</h4>
+          <div class="footer-links-list">
+            <a href="contact.html#faq">Privacy Policy</a>
+            <a href="contact.html#faq">Terms of Engagement</a>
+            <a href="contact.html#faq">Security Standards</a>
+            <a href="contact.html#faq">IP Ownership Policy</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p>&copy; 2026 AstraMind Labs. All rights reserved. Prepared in accordance with the AstraMind Labs Corporate Charter.</p>
+        <p>Area 3, Lilongwe, Malawi • Intelligent Technology Built for Impact</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Back to Top" title="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>

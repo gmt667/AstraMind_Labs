@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about AstraMind Labs: African AI-first technology company headquartered in Lilongwe, Malawi. Meet our executive leadership, explore our mission, vision, and corporate governance standards.">
+  <title>About & Leadership | AstraMind Labs</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==================== NAVIGATION BAR ==================== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand" aria-label="AstraMind Labs Home">
+        <img src="assets/logo.png" alt="AstraMind Labs" class="brand-logo" onerror="this.style.display='none'; document.getElementById('nav-fallback-brand').style.display='flex';">
+        <span id="nav-fallback-brand" class="brand-fallback-wrap" style="display:none;">
+          <svg viewBox="0 0 40 40" fill="none" class="svg-logo-icon" xmlns="http://www.w3.org/2000/svg">
+            <rect width="40" height="40" rx="8" fill="#1a56db"/>
+            <path d="M20 7L33 31H7L20 7Z" fill="white" fill-opacity="0.95"/>
+            <path d="M20 15L28 31H12L20 15Z" fill="#1a56db"/>
+            <circle cx="20" cy="27" r="3.5" fill="white"/>
+          </svg>
+          <span class="brand-text">AstraMind <span class="accent">Labs</span></span>
+        </span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <div class="nav-menu-wrapper">
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="methodology.html" class="nav-link">Methodology</a></li>
+            <li><a href="products.html" class="nav-link">Products</a></li>
+            <li><a href="industries.html" class="nav-link">Industries</a></li>
+            <li><a href="about.html" class="nav-link active">About</a></li>
+            <li><a href="careers.html" class="nav-link">Careers</a></li>
+            <li><a href="insights.html" class="nav-link">Insights</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-controls">
+          <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+            <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </button>
+
+          <a href="contact.html" class="btn btn-primary btn-sm">Schedule Consultation</a>
+        </div>
+      </div>
+
+      <!-- Mobile Toggle Button -->
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Open navigation menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-link">Home</a></li>
+      <li><a href="services.html" class="mobile-link">Services & Capabilities</a></li>
+      <li><a href="methodology.html" class="mobile-link">Engineering Methodology</a></li>
+      <li><a href="products.html" class="mobile-link">Proprietary Products</a></li>
+      <li><a href="industries.html" class="mobile-link">Industry Solutions</a></li>
+      <li><a href="about.html" class="mobile-link active">Leadership & Governance</a></li>
+      <li><a href="careers.html" class="mobile-link">Careers</a></li>
+      <li><a href="insights.html" class="mobile-link">Insights & Research</a></li>
+      <li><a href="contact.html" class="mobile-link">Contact & Consultation</a></li>
+    </ul>
+
+    <div class="mobile-theme-row">
+      <span>Color Theme</span>
+      <button id="mobile-theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      </button>
+    </div>
+
+    <div style="margin-top: 1.5rem;">
+      <a href="contact.html" class="btn btn-primary btn-block">Get in Touch</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==================== PAGE HERO ==================== -->
+    <section class="page-hero">
+      <div class="container page-hero-content">
+        <span class="eyebrow">Corporate Profile & Leadership</span>
+        <h1 class="page-hero-title">About AstraMind Labs</h1>
+        <p class="page-hero-subtitle">
+          An African AI-first technology company headquartered in Area 3, Lilongwe, Malawi — building intelligent software, cloud solutions, and digital infrastructure for global scale.
+        </p>
+      </div>
+    </section>    <!-- ==================== EXECUTIVE LEADERSHIP ==================== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Executive Direction</span>
+          <h2 class="section-title">Leadership <span>Team</span></h2>
+          <p class="section-subtitle">AstraMind Labs is led by a team of technologists, academics, and engineers who combine professional depth with a shared commitment to building technology that creates lasting impact.</p>
+        </div>
+
+        <div class="team-bios-grid">
+
+          <!-- Leader 1: Stevens Prince Thengo — CEO -->
+          <div class="team-bio-card">
+            <div class="team-bio-top">
+              <div class="team-avatar-circle">ST</div>
+              <div class="team-title-block">
+                <h3>Stevens Prince Thengo</h3>
+                <span class="team-role-tag">Chief Executive Officer (CEO)</span>
+                <span class="team-affiliation-tag">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                  LUANAR &bull; Open Distance &amp; eLearning Coordinator
+                </span>
+              </div>
+            </div>
+
+            <p class="team-bio-text">
+              Stevens leads AstraMind Labs' corporate vision, strategy, governance, and external stakeholder relationships. He is responsible for long-term priorities, major organisational decisions, performance accountability, and ensuring the company remains aligned with its mission of building intelligent technology for African challenges.
+            </p>
+            <p class="team-bio-text">
+              In his professional career, Stevens serves as a Coordinator for Open Distance and eLearning at the Lilongwe University of Agriculture and Natural Resources (LUANAR), where he oversees remote and blended learning programmes. This deep operational experience in digital education infrastructure directly informs AstraMind Labs' development of Astra Academia.
+            </p>
+
+            <div class="team-credentials-block">
+              <div class="credentials-label">Academic Credentials</div>
+              <div class="credential-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+                <span>Master of Science in Informatics</span>
+              </div>
+              <div class="credential-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+                <span>Postgraduate Diploma in IT &amp; Applied Systems Support</span>
+              </div>
+              <div class="credential-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+                <span>Bachelor's Degree in Information Science</span>
+              </div>
+              <div class="credential-item credential-item--inprogress">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12M12 12L8 16M12 12L16 16"/><circle cx="12" cy="6" r="4"/></svg>
+                <span>Bachelor of Laws (LLB) — Final Year, University of London <em>(in progress)</em></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Leader 2: George M. Taumbe — COO -->
+          <div class="team-bio-card">
+            <div class="team-bio-top">
+              <div class="team-avatar-circle" style="background: linear-gradient(135deg, #0d9488, #0f766e);">GT</div>
+              <div class="team-title-block">
+                <h3>George M. Taumbe</h3>
+                <span class="team-role-tag" style="color:#0d9488;">Chief Operating Officer (COO)</span>
+                <span class="team-affiliation-tag">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                  Computer Engineering &bull; Software &amp; Intelligent Systems
+                </span>
+              </div>
+            </div>
+
+            <p class="team-bio-text">
+              George translates AstraMind Labs' corporate strategy into coordinated, accountable execution. He oversees day-to-day operations, internal systems, cross-functional delivery coordination, performance tracking, and risk management — ensuring that engineering teams ship reliable, high-quality products on time and within scope.
+            </p>
+            <p class="team-bio-text">
+              His primary interest and technical contribution sits on the engineering and intelligent systems side — specifically in software development, AI/ML architecture, and the design of solutions that create meaningful value for institutions, businesses, and individuals. George brings rigorous systems thinking to both operational leadership and hands-on product development at AstraMind Labs.
+            </p>
+
+            <div class="team-credentials-block">
+              <div class="credentials-label">Academic Credentials</div>
+              <div class="credential-item credential-item--inprogress">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12M12 12L8 16M12 12L16 16"/><circle cx="12" cy="6" r="4"/></svg>
+                <span>Bachelor of Science in Computer Engineering <em>(in progress)</em></span>
+              </div>
+            </div>
+            <div class="team-focus-areas">
+              <div class="focus-label">Technical Focus</div>
+              <div class="focus-tags">
+                <span>Software Development</span>
+                <span>AI &amp; Machine Learning</span>
+                <span>Intelligent Systems</span>
+                <span>Solution Architecture</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Leader 3: Christopher Ng'oma — CTO -->
+          <div class="team-bio-card">
+            <div class="team-bio-top">
+              <div class="team-avatar-circle" style="background: linear-gradient(135deg, #6366f1, #4f46e5);">CN</div>
+              <div class="team-title-block">
+                <h3>Christopher Ng'oma</h3>
+                <span class="team-role-tag" style="color:#6366f1;">Chief Technology Officer (CTO)</span>
+                <span class="team-affiliation-tag">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                  Computer Engineering &bull; Software &amp; Intelligent Systems
+                </span>
+              </div>
+            </div>
+
+            <p class="team-bio-text">
+              Christopher leads AstraMind Labs' entire technology strategy — spanning artificial intelligence, software engineering, cloud infrastructure, data architecture, and security. He is responsible for engineering capability-building, research direction, technical quality standards, and ensuring the reliability and scalability of every system the company ships.
+            </p>
+            <p class="team-bio-text">
+              His primary interest and contribution is firmly on the technical and engineering side: software development, AI/ML systems design, intelligent systems architecture, and building solutions that create meaningful value for institutions, businesses, and individuals. Christopher drives the engineering culture and technical decision-making at AstraMind Labs.
+            </p>
+
+            <div class="team-credentials-block">
+              <div class="credentials-label">Academic Credentials</div>
+              <div class="credential-item credential-item--inprogress">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12M12 12L8 16M12 12L16 16"/><circle cx="12" cy="6" r="4"/></svg>
+                <span>Bachelor of Science in Computer Engineering <em>(in progress)</em></span>
+              </div>
+            </div>
+            <div class="team-focus-areas">
+              <div class="focus-label">Technical Focus</div>
+              <div class="focus-tags">
+                <span>Software Engineering</span>
+                <span>AI &amp; ML Systems</span>
+                <span>Cloud Infrastructure</span>
+                <span>Intelligent Systems Design</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Vision, Mission & Brand Promise -->
+        <div class="mission-vision-trio" style="margin-top: 4rem;">
+          <div class="mvp-card">
+            <h3>Our Vision</h3>
+            <p>To become a globally recognised technology company originating from Africa, building intelligent systems and digital infrastructure that transform how people, businesses, and institutions operate.</p>
+          </div>
+
+          <div class="mvp-card">
+            <h3>Our Mission</h3>
+            <p>To build accessible, intelligent, and innovative technologies that solve real-world problems, empower businesses and communities, and accelerate Africa's digital transformation.</p>
+          </div>
+
+          <div class="mvp-card featured-promise">
+            <span class="promise-kicker">Brand Promise</span>
+            <h3>African Problems.<br>Intelligent Solutions.<br>Global Impact.</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CORPORATE CULTURE & VALUES ==================== -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Guiding Principles</span>
+          <h2 class="section-title">Core Corporate Values</h2>
+          <p class="section-subtitle">The eight foundational values that define how we build software, treat colleagues, and partner with clients.</p>
+        </div>
+
+        <div class="corporate-values-grid">
+          <div class="value-tile">
+            <h4>Innovation</h4>
+            <p>We keep looking for better solutions and pushing boundaries.</p>
+          </div>
+          <div class="value-tile">
+            <h4>Ownership</h4>
+            <p>We take full responsibility for our work and commitments.</p>
+          </div>
+          <div class="value-tile">
+            <h4>Integrity</h4>
+            <p>We do the right thing and communicate honestly with clients.</p>
+          </div>
+          <div class="value-tile">
+            <h4>Collaboration</h4>
+            <p>We build together, listen actively, and respect every contributor.</p>
+          </div>
+          <div class="value-tile">
+            <h4>Learning</h4>
+            <p>We continuously strengthen our technical skills and critical thinking.</p>
+          </div>
+          <div class="value-tile">
+            <h4>Quality</h4>
+            <p>We test, secure, optimize, and document every system we build.</p>
+          </div>
+          <div class="value-tile">
+            <h4>Ambition</h4>
+            <p>We think beyond Malawi while staying grounded in real needs.</p>
+          </div>
+          <div class="value-tile">
+            <h4>Impact</h4>
+            <p>We focus our engineering talent on problems that genuinely matter.</p>
+          </div>
+        </div>
+
+        <!-- Professional Standards -->
+        <div class="trust-standards-panel" style="margin-top: 3.5rem;">
+          <h3>Trust & Professional Standards</h3>
+          <div class="standards-five-col">
+            <div class="std-box">
+              <h5>Data Confidentiality</h5>
+              <p>Protect customer information, credentials, intellectual property, and confidential business data.</p>
+            </div>
+            <div class="std-box">
+              <h5>Accountability</h5>
+              <p>Make commitments only through authorised processes and communicate risks early.</p>
+            </div>
+            <div class="std-box">
+              <h5>Transparency</h5>
+              <p>Record company income and expenses transparently without exception.</p>
+            </div>
+            <div class="std-box">
+              <h5>Respect</h5>
+              <p>Treat clients, partners, and team members professionally and without discrimination.</p>
+            </div>
+            <div class="std-box">
+              <h5>Quality Release</h5>
+              <p>Release technology only after appropriate testing, security review, and documentation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CTA BANNER ==================== -->
+    <section class="cta-banner-section">
+      <div class="container">
+        <h2>Partner with an African Technology Leader</h2>
+        <p>Connect with our leadership team in Lilongwe, Malawi to explore strategic enterprise collaborations.</p>
+        <a href="contact.html" class="btn btn-white">Contact Executive Leadership</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== CORPORATE FOOTER ==================== -->
+  <footer class="corporate-footer">
+    <div class="container">
+      <div class="footer-columns-grid">
+        <div>
+          <a href="index.html" aria-label="AstraMind Labs Home">
+            <img src="assets/logo.png" alt="AstraMind Labs" class="footer-brand-logo" onerror="this.style.display='none'; document.getElementById('footer-fallback-brand').style.display='block';">
+            <span id="footer-fallback-brand" style="display:none; font-family:var(--font-heading); font-size:1.4rem; font-weight:800; color:#fff; margin-bottom:1rem;">AstraMind Labs</span>
+          </a>
+          <p class="footer-tagline">
+            AstraMind Labs is a Malawi-based AI-first technology company building intelligent software, cloud solutions and digital products for African challenges and global opportunity.
+          </p>
+        </div>
+
+        <div class="footer-col-block">
+          <h4>Navigation</h4>
+          <div class="footer-links-list">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services & Capabilities</a>
+            <a href="methodology.html">Engineering Methodology</a>
+            <a href="products.html">Proprietary Products</a>
+          </div>
+        </div>
+
+        <div class="footer-col-block">
+          <h4>Company</h4>
+          <div class="footer-links-list">
+            <a href="about.html">About & Leadership</a>
+            <a href="industries.html">Industry Solutions</a>
+            <a href="careers.html">Careers</a>
+            <a href="insights.html">Insights & Research</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <div class="footer-col-block">
+          <h4>Legal & Trust</h4>
+          <div class="footer-links-list">
+            <a href="contact.html#faq">Privacy Policy</a>
+            <a href="contact.html#faq">Terms of Engagement</a>
+            <a href="contact.html#faq">Security Standards</a>
+            <a href="contact.html#faq">IP Ownership Policy</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p>&copy; 2026 AstraMind Labs. All rights reserved. Prepared in accordance with the AstraMind Labs Corporate Charter.</p>
+        <p>Area 3, Lilongwe, Malawi • Intelligent Technology Built for Impact</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Back to Top" title="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>

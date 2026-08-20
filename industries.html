@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AstraMind Labs delivers specialized digital solutions and AI systems across Education, Agriculture, Financial Services, Healthcare, Government, and Smart Infrastructure.">
+  <title>Industry Solutions & Target Sectors | AstraMind Labs</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==================== NAVIGATION BAR ==================== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand" aria-label="AstraMind Labs Home">
+        <img src="assets/logo.png" alt="AstraMind Labs" class="brand-logo" onerror="this.style.display='none'; document.getElementById('nav-fallback-brand').style.display='flex';">
+        <span id="nav-fallback-brand" class="brand-fallback-wrap" style="display:none;">
+          <svg viewBox="0 0 40 40" fill="none" class="svg-logo-icon" xmlns="http://www.w3.org/2000/svg">
+            <rect width="40" height="40" rx="8" fill="#1a56db"/>
+            <path d="M20 7L33 31H7L20 7Z" fill="white" fill-opacity="0.95"/>
+            <path d="M20 15L28 31H12L20 15Z" fill="#1a56db"/>
+            <circle cx="20" cy="27" r="3.5" fill="white"/>
+          </svg>
+          <span class="brand-text">AstraMind <span class="accent">Labs</span></span>
+        </span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <div class="nav-menu-wrapper">
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="methodology.html" class="nav-link">Methodology</a></li>
+            <li><a href="products.html" class="nav-link">Products</a></li>
+            <li><a href="industries.html" class="nav-link active">Industries</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="careers.html" class="nav-link">Careers</a></li>
+            <li><a href="insights.html" class="nav-link">Insights</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-controls">
+          <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+            <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </button>
+
+          <a href="contact.html" class="btn btn-primary btn-sm">Schedule Consultation</a>
+        </div>
+      </div>
+
+      <!-- Mobile Toggle Button -->
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Open navigation menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-link">Home</a></li>
+      <li><a href="services.html" class="mobile-link">Services & Capabilities</a></li>
+      <li><a href="methodology.html" class="mobile-link">Engineering Methodology</a></li>
+      <li><a href="products.html" class="mobile-link">Proprietary Products</a></li>
+      <li><a href="industries.html" class="mobile-link active">Industry Solutions</a></li>
+      <li><a href="about.html" class="mobile-link">Leadership & Governance</a></li>
+      <li><a href="careers.html" class="mobile-link">Careers</a></li>
+      <li><a href="insights.html" class="mobile-link">Insights & Research</a></li>
+      <li><a href="contact.html" class="mobile-link">Contact & Consultation</a></li>
+    </ul>
+
+    <div class="mobile-theme-row">
+      <span>Color Theme</span>
+      <button id="mobile-theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      </button>
+    </div>
+
+    <div style="margin-top: 1.5rem;">
+      <a href="contact.html" class="btn btn-primary btn-block">Get in Touch</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==================== PAGE HERO ==================== -->
+    <section class="page-hero">
+      <div class="container page-hero-content">
+        <span class="eyebrow">Sector-Specific Solutions</span>
+        <h1 class="page-hero-title">Where We Create Measurable Impact</h1>
+        <p class="page-hero-subtitle">
+          AstraMind Labs deploys tailored software, data intelligence, and AI systems in sectors where technological modernization generates direct economic and social value.
+        </p>
+      </div>
+    </section>
+
+    <!-- ==================== INDUSTRY CARDS GRID ==================== -->
+    <section class="section">
+      <div class="container">
+        <div class="industry-cards-grid">
+          <!-- Sector 1 -->
+          <div class="industry-sector-box">
+            <div class="sector-icon-frame">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
+            </div>
+            <h3>Education & Academia</h3>
+            <p>Intelligent interactive tutors, online learning management platforms, offline sync modules, and administrative student telemetry designed for African universities and secondary schools.</p>
+          </div>
+
+          <!-- Sector 2 -->
+          <div class="industry-sector-box">
+            <div class="sector-icon-frame">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3C6.477 3 2 7.477 2 13h2a8 8 0 018-8v-2zm0 18a10 10 0 100-20 10 10 0 000 20z"/><path d="M7 14.5C7 10.91 9.686 8 13 8"/></svg>
+            </div>
+            <h3>Agriculture & Agritech</h3>
+            <p>Computer vision crop diagnostic tools, soil sensor telemetry, automated farming recommendations, and disease containment models for smallholder cooperatives and agricultural exporters.</p>
+          </div>
+
+          <!-- Sector 3 -->
+          <div class="industry-sector-box">
+            <div class="sector-icon-frame">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+            </div>
+            <h3>Banking & Financial Services</h3>
+            <p>Real-time fraud detection algorithms, transaction monitoring, credit scoring models, and automated ledger reconciliation for micro-lenders, banks, and mobile money operators.</p>
+          </div>
+
+          <!-- Sector 4 -->
+          <div class="industry-sector-box">
+            <div class="sector-icon-frame">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <h3>Healthcare & Diagnostics</h3>
+            <p>Secure electronic health records (EHR), clinic resource optimization systems, and responsible AI-assisted decision-support software for medical centers.</p>
+          </div>
+
+          <!-- Sector 5 -->
+          <div class="industry-sector-box">
+            <div class="sector-icon-frame">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M9 8h1m-1 4h1m4-4h1m-1 4h1M9 21v-3.375C9 16.612 10.343 16 12 16s3 .612 3 1.625V21"/><path d="M3 21V7l9-4 9 4v14"/></svg>
+            </div>
+            <h3>Government & Public Sector</h3>
+            <p>Digital public service platforms, automated document processing, citizen service portals, and transparent audit workflows designed for governmental institutions.</p>
+          </div>
+
+          <!-- Sector 6 -->
+          <div class="industry-sector-box">
+            <div class="sector-icon-frame">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+            </div>
+            <h3>Infrastructure & Smart Systems</h3>
+            <p>Internet of Things (IoT) sensor management, smart grid monitoring, edge computing telemetry, and facility automation for enterprises and logistics networks.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CTA BANNER ==================== -->
+    <section class="cta-banner-section">
+      <div class="container">
+        <h2>Modernize Your Industry Workflows</h2>
+        <p>Schedule an industry-focused consultation with our solution architects to evaluate opportunities in your specific sector.</p>
+        <a href="contact.html" class="btn btn-white">Consult Our Sector Specialists</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== CORPORATE FOOTER ==================== -->
+  <footer class="corporate-footer">
+    <div class="container">
+      <div class="footer-columns-grid">
+        <div>
+          <a href="index.html" aria-label="AstraMind Labs Home">
+            <img src="assets/logo.png" alt="AstraMind Labs" class="footer-brand-logo" onerror="this.style.display='none'; document.getElementById('footer-fallback-brand').style.display='block';">
+            <span id="footer-fallback-brand" style="display:none; font-family:var(--font-heading); font-size:1.4rem; font-weight:800; color:#fff; margin-bottom:1rem;">AstraMind Labs</span>
+          </a>
+          <p class="footer-tagline">
+            AstraMind Labs is a Malawi-based AI-first technology company building intelligent software, cloud solutions and digital products for African challenges and global opportunity.
+          </p>
+        </div>
+
+        <div class="footer-col-block">
+          <h4>Navigation</h4>
+          <div class="footer-links-list">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services & Capabilities</a>
+            <a href="methodology.html">Engineering Methodology</a>
+            <a href="products.html">Proprietary Products</a>
+          </div>
+        </div>
+
+        <div class="footer-col-block">
+          <h4>Company</h4>
+          <div class="footer-links-list">
+            <a href="about.html">About & Leadership</a>
+            <a href="industries.html">Industry Solutions</a>
+            <a href="careers.html">Careers</a>
+            <a href="insights.html">Insights & Research</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <div class="footer-col-block">
+          <h4>Legal & Trust</h4>
+          <div class="footer-links-list">
+            <a href="contact.html#faq">Privacy Policy</a>
+            <a href="contact.html#faq">Terms of Engagement</a>
+            <a href="contact.html#faq">Security Standards</a>
+            <a href="contact.html#faq">IP Ownership Policy</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p>&copy; 2026 AstraMind Labs. All rights reserved. Prepared in accordance with the AstraMind Labs Corporate Charter.</p>
+        <p>Area 3, Lilongwe, Malawi • Intelligent Technology Built for Impact</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Back to Top" title="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>

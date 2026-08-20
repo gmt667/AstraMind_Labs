@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover AstraMind Labs proprietary product suite: AstraLearn, AstraAgri, AstraVoice, and AstraPay — intelligent platforms built in Africa for scalable global impact.">
+  <title>Proprietary Products & Technologies | AstraMind Labs</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==================== NAVIGATION BAR ==================== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand" aria-label="AstraMind Labs Home">
+        <img src="assets/logo.png" alt="AstraMind Labs" class="brand-logo" onerror="this.style.display='none'; document.getElementById('nav-fallback-brand').style.display='flex';">
+        <span id="nav-fallback-brand" class="brand-fallback-wrap" style="display:none;">
+          <svg viewBox="0 0 40 40" fill="none" class="svg-logo-icon" xmlns="http://www.w3.org/2000/svg">
+            <rect width="40" height="40" rx="8" fill="#1a56db"/>
+            <path d="M20 7L33 31H7L20 7Z" fill="white" fill-opacity="0.95"/>
+            <path d="M20 15L28 31H12L20 15Z" fill="#1a56db"/>
+            <circle cx="20" cy="27" r="3.5" fill="white"/>
+          </svg>
+          <span class="brand-text">AstraMind <span class="accent">Labs</span></span>
+        </span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <div class="nav-menu-wrapper">
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="methodology.html" class="nav-link">Methodology</a></li>
+            <li><a href="products.html" class="nav-link active">Products</a></li>
+            <li><a href="industries.html" class="nav-link">Industries</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="careers.html" class="nav-link">Careers</a></li>
+            <li><a href="insights.html" class="nav-link">Insights</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-controls">
+          <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+            <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </button>
+
+          <a href="contact.html" class="btn btn-primary btn-sm">Schedule Consultation</a>
+        </div>
+      </div>
+
+      <!-- Mobile Toggle Button -->
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Open navigation menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-link">Home</a></li>
+      <li><a href="services.html" class="mobile-link">Services & Capabilities</a></li>
+      <li><a href="methodology.html" class="mobile-link">Engineering Methodology</a></li>
+      <li><a href="products.html" class="mobile-link active">Proprietary Products</a></li>
+      <li><a href="industries.html" class="mobile-link">Industry Solutions</a></li>
+      <li><a href="about.html" class="mobile-link">Leadership & Governance</a></li>
+      <li><a href="careers.html" class="mobile-link">Careers</a></li>
+      <li><a href="insights.html" class="mobile-link">Insights & Research</a></li>
+      <li><a href="contact.html" class="mobile-link">Contact & Consultation</a></li>
+    </ul>
+
+    <div class="mobile-theme-row">
+      <span>Color Theme</span>
+      <button id="mobile-theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      </button>
+    </div>
+
+    <div style="margin-top: 1.5rem;">
+      <a href="contact.html" class="btn btn-primary btn-block">Get in Touch</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==================== PAGE HERO ==================== -->
+    <section class="page-hero">
+      <div class="container page-hero-content">
+        <span class="eyebrow">AstraMind Technologies</span>
+        <h1 class="page-hero-title">Proprietary Products & AI Assets</h1>
+        <p class="page-hero-subtitle">
+          Intelligent software platforms engineered to address fundamental African challenges across Education, Agriculture, Natural Language Processing, and Fintech.
+        </p>
+      </div>
+    </section>
+
+    <!-- ==================== DETAILED PRODUCT CATALOG ==================== -->
+    <section class="section">
+      <div class="container">
+        <div class="products-catalog-grid">
+          <!-- Product 1: AstraLearn -->
+          <div class="product-item-card">
+            <span class="product-status-pill status-active-dev">In Development</span>
+            <div>
+              <h3>AstraLearn</h3>
+              <p>An intelligent educational ecosystem providing customized AI tutors, automated quiz evaluations, and student progress telemetry designed specifically for African schools, colleges, and national exam curricula.</p>
+              
+              <ul class="service-feature-checklist" style="margin-top: 1.5rem;">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Curriculum-aligned AI personalized tutors</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Offline sync capability for low-connectivity regions</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Automated teacher grading & lesson planning assistance</li>
+              </ul>
+            </div>
+            <div class="product-meta-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
+              <span>Domain: Intelligent Education Infrastructure</span>
+            </div>
+          </div>
+
+          <!-- Product 2: AstraAgri -->
+          <div class="product-item-card">
+            <span class="product-status-pill status-active-dev">In Development</span>
+            <div>
+              <h3>AstraAgri</h3>
+              <p>AI-assisted agronomy platform leveraging computer vision for instant leaf crop disease diagnostics, soil telemetry mapping, and automated micro-climate weather forecasts for farmers and agricultural unions.</p>
+              
+              <ul class="service-feature-checklist" style="margin-top: 1.5rem;">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Smartphone photo crop disease & pest detection</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Soil nutrient mapping & fertilizer recommendations</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> SMS / Voice advisory integration for smallholder farmers</li>
+              </ul>
+            </div>
+            <div class="product-meta-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3C6.477 3 2 7.477 2 13h2a8 8 0 018-8v-2zm0 18a10 10 0 100-20 10 10 0 000 20z"/><path d="M7 14.5C7 10.91 9.686 8 13 8"/></svg>
+              <span>Domain: Agriculture & Precision Agritech</span>
+            </div>
+          </div>
+
+          <!-- Product 3: AstraVoice -->
+          <div class="product-item-card">
+            <span class="product-status-pill status-rnd">Research & Prototyping</span>
+            <div>
+              <h3>AstraVoice</h3>
+              <p>African-language speech intelligence system engineered to transcribe, synthesize, and process natural language in Chichewa, regional Bantu languages, and local dialects with high acoustic accuracy.</p>
+              
+              <ul class="service-feature-checklist" style="margin-top: 1.5rem;">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Automated Speech Recognition (ASR) in Chichewa</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Localized Text-to-Speech (TTS) voice generation</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Call center & interactive voice response (IVR) automation</li>
+              </ul>
+            </div>
+            <div class="product-meta-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+              <span>Domain: African Natural Language Processing</span>
+            </div>
+          </div>
+
+          <!-- Product 4: AstraPay -->
+          <div class="product-item-card">
+            <span class="product-status-pill status-upcoming">Coming Soon</span>
+            <div>
+              <h3>AstraPay</h3>
+              <p>Intelligent financial fraud prevention and transaction verification architecture designed for micro-finance institutions, mobile money platforms, and regional banking networks.</p>
+              
+              <ul class="service-feature-checklist" style="margin-top: 1.5rem;">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Real-time anomaly detection & risk scoring algorithms</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Automated reconciliation & settlement audits</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Compliance monitoring & regulatory reporting modules</li>
+              </ul>
+            </div>
+            <div class="product-meta-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+              <span>Domain: Financial Intelligence & Fraud Prevention</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS IN PROGRESS ==================== -->
+    <section class="section section-alt" id="projects-in-progress">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Active Engineering</span>
+          <h2 class="section-title">Projects <span>In Progress</span></h2>
+          <p class="section-subtitle">Platforms currently under active design, development, and prototyping by the AstraMind Labs engineering team.</p>
+        </div>
+
+        <div class="pip-grid">
+
+          <!-- Project 1: Astra Data Helix -->
+          <div class="pip-card">
+            <div class="pip-card-header">
+              <div class="pip-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+              </div>
+              <div>
+                <span class="pip-status-tag">In Development</span>
+                <h3 class="pip-title">Astra Data Helix</h3>
+              </div>
+            </div>
+            <p class="pip-description">An intelligent data engineering platform designed to generate, augment, clean, and prepare high-quality datasets for training machine learning and AI models. Astra Data Helix automates the most time-intensive steps of the ML pipeline — from raw data ingestion and normalization to synthetic data generation and quality validation.</p>
+            <div class="pip-features">
+              <div class="pip-feature-row">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Automated synthetic dataset generation for AI/ML training</span>
+              </div>
+              <div class="pip-feature-row">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Intelligent data cleaning, deduplication &amp; schema normalization</span>
+              </div>
+              <div class="pip-feature-row">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Data labelling pipeline &amp; annotation workflow automation</span>
+              </div>
+              <div class="pip-feature-row">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Dataset quality scoring &amp; bias detection reports</span>
+              </div>
+            </div>
+            <div class="pip-domain-tag">Domain: AI Data Infrastructure &amp; MLOps</div>
+          </div>
+
+          <!-- Project 2: Astra Academia -->
+          <div class="pip-card">
+            <div class="pip-card-header">
+              <div class="pip-icon-box" style="background: rgba(16, 185, 129, 0.12); color: #10b981;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              </div>
+              <div>
+                <span class="pip-status-tag" style="background:rgba(16,185,129,0.12);color:#10b981;">In Development</span>
+                <h3 class="pip-title">Astra Academia</h3>
+              </div>
+            </div>
+            <p class="pip-description">A comprehensive academic management and e-learning platform designed for African universities, colleges, and open distance learning institutions. Astra Academia combines student information systems, curriculum management, and AI-powered learning tools into a single unified platform — addressing the specific needs of institutions with both on-campus and remote learners.</p>
+            <div class="pip-features">
+              <div class="pip-feature-row">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Student Information System (SIS) with enrollment &amp; results management</span>
+              </div>
+              <div class="pip-feature-row">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Open Distance &amp; eLearning (ODeL) module with async content delivery</span>
+              </div>
+              <div class="pip-feature-row">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>AI tutoring assistants &amp; automated assessment grading</span>
+              </div>
+              <div class="pip-feature-row">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Offline-first architecture for low-bandwidth environments</span>
+              </div>
+            </div>
+            <div class="pip-domain-tag" style="border-color:rgba(16,185,129,0.3);color:#10b981;">Domain: Higher Education &amp; Distance Learning Technology</div>
+          </div>
+
+          <!-- Project 3: Masewera 265 -->
+          <div class="pip-card">
+            <div class="pip-card-header">
+              <div class="pip-icon-box" style="background: rgba(99, 102, 241, 0.12); color: #6366f1;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><path d="M8 21h8M12 17v4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="13"/></svg>
+              </div>
+              <div>
+                <span class="pip-status-tag" style="background:rgba(99,102,241,0.12);color:#6366f1;">Prototyping</span>
+                <h3 class="pip-title">Masewera 265</h3>
+              </div>
+            </div>
+            <p class="pip-description">A Malawian-built gaming and digital entertainment platform — "Masewera" meaning games in Chichewa, "265" representing Malawi's international dialling code. Masewera 265 is designed to create a local gaming ecosystem: hosting casual and competitive games, supporting local game developers, and providing a culturally relevant digital entertainment experience built specifically for Malawian and pan-African audiences.</p>
+            <div class="pip-features">
+              <div class="pip-feature-row">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Casual &amp; competitive multiplayer game hosting infrastructure</span>
+              </div>
+              <div class="pip-feature-row">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Local game developer SDK &amp; publishing platform</span>
+              </div>
+              <div class="pip-feature-row">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Mobile-first with low-data mode for connectivity-constrained users</span>
+              </div>
+              <div class="pip-feature-row">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Leaderboards, tournaments &amp; Malawian cultural content integration</span>
+              </div>
+            </div>
+            <div class="pip-domain-tag" style="border-color:rgba(99,102,241,0.3);color:#6366f1;">Domain: Digital Entertainment &amp; African Gaming Ecosystem</div>
+          </div>
+
+          <!-- Project 4: Mudzi Platform -->
+          <div class="pip-card">
+            <div class="pip-card-header">
+              <div class="pip-icon-box" style="background: rgba(245, 158, 11, 0.12); color: #f59e0b;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              </div>
+              <div>
+                <span class="pip-status-tag" style="background:rgba(245,158,11,0.12);color:#d97706;">Prototyping</span>
+                <h3 class="pip-title">Mudzi Platform</h3>
+              </div>
+            </div>
+            <p class="pip-description">"Mudzi" meaning village or community in Chichewa — a digital community and services platform designed to connect rural and peri-urban communities across Malawi with essential services, information, and local government resources. Mudzi Platform aims to bridge the digital divide at the community level by enabling service discovery, local communication, and civic participation through accessible mobile-first technology.</p>
+            <div class="pip-features">
+              <div class="pip-feature-row">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Community services directory &amp; local information hub</span>
+              </div>
+              <div class="pip-feature-row">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Civic participation tools — local reporting &amp; feedback systems</span>
+              </div>
+              <div class="pip-feature-row">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Chichewa-first interface with multilingual local language support</span>
+              </div>
+              <div class="pip-feature-row">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>USSD &amp; SMS fallback for non-smartphone users</span>
+              </div>
+            </div>
+            <div class="pip-domain-tag" style="border-color:rgba(245,158,11,0.3);color:#d97706;">Domain: Community Connectivity &amp; Rural Digital Services</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PILOT PARTNERSHIP SECTION ==================== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Enterprise Pilots</span>
+          <h2 class="section-title">Join Our Early Access Pilot Programs</h2>
+          <p class="section-subtitle">We partner with universities, agricultural bodies, and financial institutions to test and deploy our proprietary technologies before public release.</p>
+        </div>
+
+        <div style="text-align: center;">
+          <a href="contact.html?service=research" class="btn btn-primary">Apply for Pilot Access &amp; Partnership</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CTA BANNER ==================== -->
+    <section class="cta-banner-section">
+      <div class="container">
+        <h2>Want to Integrate AstraMind Technologies?</h2>
+        <p>Integrate our proprietary AI models and APIs into your existing organizational infrastructure.</p>
+        <a href="contact.html" class="btn btn-white">Contact Our Integration Team</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== CORPORATE FOOTER ==================== -->
+  <footer class="corporate-footer">
+    <div class="container">
+      <div class="footer-columns-grid">
+        <div>
+          <a href="index.html" aria-label="AstraMind Labs Home">
+            <img src="assets/logo.png" alt="AstraMind Labs" class="footer-brand-logo" onerror="this.style.display='none'; document.getElementById('footer-fallback-brand').style.display='block';">
+            <span id="footer-fallback-brand" style="display:none; font-family:var(--font-heading); font-size:1.4rem; font-weight:800; color:#fff; margin-bottom:1rem;">AstraMind Labs</span>
+          </a>
+          <p class="footer-tagline">
+            AstraMind Labs is a Malawi-based AI-first technology company building intelligent software, cloud solutions and digital products for African challenges and global opportunity.
+          </p>
+        </div>
+
+        <div class="footer-col-block">
+          <h4>Navigation</h4>
+          <div class="footer-links-list">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services & Capabilities</a>
+            <a href="methodology.html">Engineering Methodology</a>
+            <a href="products.html">Proprietary Products</a>
+          </div>
+        </div>
+
+        <div class="footer-col-block">
+          <h4>Company</h4>
+          <div class="footer-links-list">
+            <a href="about.html">About & Leadership</a>
+            <a href="industries.html">Industry Solutions</a>
+            <a href="careers.html">Careers</a>
+            <a href="insights.html">Insights & Research</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <div class="footer-col-block">
+          <h4>Legal & Trust</h4>
+          <div class="footer-links-list">
+            <a href="contact.html#faq">Privacy Policy</a>
+            <a href="contact.html#faq">Terms of Engagement</a>
+            <a href="contact.html#faq">Security Standards</a>
+            <a href="contact.html#faq">IP Ownership Policy</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p>&copy; 2026 AstraMind Labs. All rights reserved. Prepared in accordance with the AstraMind Labs Corporate Charter.</p>
+        <p>Area 3, Lilongwe, Malawi • Intelligent Technology Built for Impact</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Back to Top" title="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>

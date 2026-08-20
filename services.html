@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover AstraMind Labs practice areas: Artificial Intelligence, Full-Stack Software Engineering, Cloud Hosting, Data Architecture, and Applied Innovation.">
+  <title>Services & Practice Areas | AstraMind Labs</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==================== NAVIGATION BAR ==================== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand" aria-label="AstraMind Labs Home">
+        <img src="assets/logo.png" alt="AstraMind Labs" class="brand-logo" onerror="this.style.display='none'; document.getElementById('nav-fallback-brand').style.display='flex';">
+        <span id="nav-fallback-brand" class="brand-fallback-wrap" style="display:none;">
+          <svg viewBox="0 0 40 40" fill="none" class="svg-logo-icon" xmlns="http://www.w3.org/2000/svg">
+            <rect width="40" height="40" rx="8" fill="#1a56db"/>
+            <path d="M20 7L33 31H7L20 7Z" fill="white" fill-opacity="0.95"/>
+            <path d="M20 15L28 31H12L20 15Z" fill="#1a56db"/>
+            <circle cx="20" cy="27" r="3.5" fill="white"/>
+          </svg>
+          <span class="brand-text">AstraMind <span class="accent">Labs</span></span>
+        </span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <div class="nav-menu-wrapper">
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="services.html" class="nav-link active">Services</a></li>
+            <li><a href="methodology.html" class="nav-link">Methodology</a></li>
+            <li><a href="products.html" class="nav-link">Products</a></li>
+            <li><a href="industries.html" class="nav-link">Industries</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="careers.html" class="nav-link">Careers</a></li>
+            <li><a href="insights.html" class="nav-link">Insights</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-controls">
+          <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+            <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </button>
+
+          <a href="contact.html" class="btn btn-primary btn-sm">Schedule Consultation</a>
+        </div>
+      </div>
+
+      <!-- Mobile Toggle Button -->
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Open navigation menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-link">Home</a></li>
+      <li><a href="services.html" class="mobile-link active">Services & Capabilities</a></li>
+      <li><a href="methodology.html" class="mobile-link">Engineering Methodology</a></li>
+      <li><a href="products.html" class="mobile-link">Proprietary Products</a></li>
+      <li><a href="industries.html" class="mobile-link">Industry Solutions</a></li>
+      <li><a href="about.html" class="mobile-link">Leadership & Governance</a></li>
+      <li><a href="careers.html" class="mobile-link">Careers</a></li>
+      <li><a href="insights.html" class="mobile-link">Insights & Research</a></li>
+      <li><a href="contact.html" class="mobile-link">Contact & Consultation</a></li>
+    </ul>
+
+    <div class="mobile-theme-row">
+      <span>Color Theme</span>
+      <button id="mobile-theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      </button>
+    </div>
+
+    <div style="margin-top: 1.5rem;">
+      <a href="contact.html" class="btn btn-primary btn-block">Get in Touch</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==================== PAGE HERO ==================== -->
+    <section class="page-hero">
+      <div class="container page-hero-content">
+        <span class="eyebrow">Enterprise IT Capabilities</span>
+        <h1 class="page-hero-title">Practice Areas & Engineering Services</h1>
+        <p class="page-hero-subtitle">
+          Strategy, intelligent software engineering, and dependable cloud operations — purpose-built for African and global enterprise scale.
+        </p>
+      </div>
+    </section>
+
+    <!-- ==================== SERVICES CATALOG WITH FILTER ==================== -->
+    <section class="section">
+      <div class="container">
+        <!-- Interactive Category Filter -->
+        <div class="service-filter-bar">
+          <button class="svc-filter-btn active" data-filter="all">All Practice Areas</button>
+          <button class="svc-filter-btn" data-filter="ai">AI & Intelligence</button>
+          <button class="svc-filter-btn" data-filter="software">Software Engineering</button>
+          <button class="svc-filter-btn" data-filter="cloud">Cloud & Infrastructure</button>
+          <button class="svc-filter-btn" data-filter="enterprise">Enterprise Modernization</button>
+        </div>
+
+        <div class="services-catalog">
+          <!-- Service 1 -->
+          <div class="service-box" data-category="ai">
+            <div>
+              <div class="svc-ico-container">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+              </div>
+              <h3>AI & Intelligent Systems</h3>
+              <p class="service-tagline">Practical machine learning solutions that improve decisions, automate work, and create smarter user experiences.</p>
+              
+              <ul class="service-feature-checklist">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Autonomous AI agents & workflow assistants</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Natural language processing & voice recognition</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Computer vision, OCR & object detection</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Predictive analytics & recommender models</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Business intelligence automation pipelines</li>
+              </ul>
+            </div>
+            <a href="contact.html?service=ai" class="btn btn-outline btn-sm">Inquire on AI &rarr;</a>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-box" data-category="software">
+            <div>
+              <div class="svc-ico-container">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+              <h3>Software & Digital Products</h3>
+              <p class="service-tagline">Secure, maintainable digital products designed around the people and organisations that rely on them every day.</p>
+              
+              <ul class="service-feature-checklist">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> High-performance Web & Mobile applications</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Enterprise SaaS platforms & secure REST/GraphQL APIs</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Management information systems (MIS)</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Portals for education, healthcare, & fintech</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Legacy systems integration & automation</li>
+              </ul>
+            </div>
+            <a href="contact.html?service=software" class="btn btn-outline btn-sm">Build Software &rarr;</a>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-box" data-category="cloud">
+            <div>
+              <div class="svc-ico-container">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+              </div>
+              <h3>Cloud & Hosting</h3>
+              <p class="service-tagline">Dependable infrastructure for websites, applications, databases, and mission-critical enterprise services.</p>
+              
+              <ul class="service-feature-checklist">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Corporate web & application server hosting</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> High-availability API & microservices clusters</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Dedicated VPS provisioning & Linux maintenance</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Automated daily offsite backups & SSL management</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> 24/7 SLA monitoring & rapid incident response</li>
+              </ul>
+            </div>
+            <a href="contact.html?service=cloud" class="btn btn-outline btn-sm">Explore Hosting &rarr;</a>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="service-box" data-category="enterprise">
+            <div>
+              <div class="svc-ico-container">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+              </div>
+              <h3>Enterprise Modernization</h3>
+              <p class="service-tagline">End-to-end consulting and implementation for organisations upgrading legacy systems to scalable cloud architectures.</p>
+              
+              <ul class="service-feature-checklist">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Strategic digital transformation roadmapping</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> AI feasibility and operational readiness audits</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Cloud migration & zero-downtime cutover</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Cybersecurity & compliance reinforcement</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Executive advisory & technical talent mentoring</li>
+              </ul>
+            </div>
+            <a href="contact.html?service=enterprise" class="btn btn-outline btn-sm">Consult Our Team &rarr;</a>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="service-box" data-category="software">
+            <div>
+              <div class="svc-ico-container">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+              </div>
+              <h3>Data Engineering & Analytics</h3>
+              <p class="service-tagline">Scalable data pipelines, database architectures, and reporting frameworks that transform data into actionable business intelligence.</p>
+              
+              <ul class="service-feature-checklist">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> High-concurrency SQL/NoSQL schema engineering</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Automated ETL data aggregation pipelines</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Executive analytics dashboards & KPI telemetry</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Data governance, anonymization & privacy controls</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Automated data quality & integrity checks</li>
+              </ul>
+            </div>
+            <a href="contact.html?service=data" class="btn btn-outline btn-sm">Build Data Systems &rarr;</a>
+          </div>
+
+          <!-- Service 6 -->
+          <div class="service-box" data-category="enterprise">
+            <div>
+              <div class="svc-ico-container">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+              </div>
+              <h3>Research & Applied Innovation</h3>
+              <p class="service-tagline">Applied research turning emerging artificial intelligence breakthroughs into real-world African solutions.</p>
+              
+              <ul class="service-feature-checklist">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Low-resource African language NLP models</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Edge AI for low-bandwidth farming & clinics</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Digital public sector governance platforms</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> IoT sensors, robotics & smart telemetries</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Rapid proof-of-concept (PoC) research pilots</li>
+              </ul>
+            </div>
+            <a href="contact.html?service=research" class="btn btn-outline btn-sm">Explore Labs &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== COMMERCIAL ENGAGEMENT MODELS ==================== -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Engagement Framework</span>
+          <h2 class="section-title">How We Partner With You</h2>
+          <p class="section-subtitle">Flexible, transparent delivery structures designed to match your organization’s timeline, scale, and operational needs.</p>
+        </div>
+
+        <div class="enterprise-models-grid">
+          <div class="model-item-card">
+            <h4>Custom Project Delivery</h4>
+            <p>End-to-end scope, design, implementation, and verified production handoff with 100% IP assignment.</p>
+          </div>
+          <div class="model-item-card">
+            <h4>Technology Consulting</h4>
+            <p>Strategic advisory, AI readiness audits, systems architecture, and engineering governance reviews.</p>
+          </div>
+          <div class="model-item-card">
+            <h4>Subscription Services</h4>
+            <p>Recurring software capabilities, managed AI integrations, continuous API access, and maintenance retainers.</p>
+          </div>
+          <div class="model-item-card">
+            <h4>Managed Infrastructure</h4>
+            <p>High-reliability VPS hosting, automated backups, SSL certificates, and 24/7 SLA incident monitoring.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CTA BANNER ==================== -->
+    <section class="cta-banner-section">
+      <div class="container">
+        <h2>Have a Technical Requirement in Mind?</h2>
+        <p>Talk with our engineering leadership to architect the ideal software, cloud, or AI solution for your organisation.</p>
+        <a href="contact.html" class="btn btn-white">Schedule Technical Consultation</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== CORPORATE FOOTER ==================== -->
+  <footer class="corporate-footer">
+    <div class="container">
+      <div class="footer-columns-grid">
+        <div>
+          <a href="index.html" aria-label="AstraMind Labs Home">
+            <img src="assets/logo.png" alt="AstraMind Labs" class="footer-brand-logo" onerror="this.style.display='none'; document.getElementById('footer-fallback-brand').style.display='block';">
+            <span id="footer-fallback-brand" style="display:none; font-family:var(--font-heading); font-size:1.4rem; font-weight:800; color:#fff; margin-bottom:1rem;">AstraMind Labs</span>
+          </a>
+          <p class="footer-tagline">
+            AstraMind Labs is a Malawi-based AI-first technology company building intelligent software, cloud solutions and digital products for African challenges and global opportunity.
+          </p>
+        </div>
+
+        <div class="footer-col-block">
+          <h4>Navigation</h4>
+          <div class="footer-links-list">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services & Capabilities</a>
+            <a href="methodology.html">Engineering Methodology</a>
+            <a href="products.html">Proprietary Products</a>
+          </div>
+        </div>
+
+        <div class="footer-col-block">
+          <h4>Company</h4>
+          <div class="footer-links-list">
+            <a href="about.html">About & Leadership</a>
+            <a href="industries.html">Industry Solutions</a>
+            <a href="careers.html">Careers</a>
+            <a href="insights.html">Insights & Research</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <div class="footer-col-block">
+          <h4>Legal & Trust</h4>
+          <div class="footer-links-list">
+            <a href="contact.html#faq">Privacy Policy</a>
+            <a href="contact.html#faq">Terms of Engagement</a>
+            <a href="contact.html#faq">Security Standards</a>
+            <a href="contact.html#faq">IP Ownership Policy</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p>&copy; 2026 AstraMind Labs. All rights reserved. Prepared in accordance with the AstraMind Labs Corporate Charter.</p>
+        <p>Area 3, Lilongwe, Malawi • Intelligent Technology Built for Impact</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Back to Top" title="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>

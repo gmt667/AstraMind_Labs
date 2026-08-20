@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore engineering and research careers at AstraMind Labs in Lilongwe, Malawi. Join our mission to build intelligent technology in Africa for global impact.">
+  <title>Careers & Culture | AstraMind Labs</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==================== NAVIGATION BAR ==================== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand" aria-label="AstraMind Labs Home">
+        <img src="assets/logo.png" alt="AstraMind Labs" class="brand-logo" onerror="this.style.display='none'; document.getElementById('nav-fallback-brand').style.display='flex';">
+        <span id="nav-fallback-brand" class="brand-fallback-wrap" style="display:none;">
+          <svg viewBox="0 0 40 40" fill="none" class="svg-logo-icon" xmlns="http://www.w3.org/2000/svg">
+            <rect width="40" height="40" rx="8" fill="#1a56db"/>
+            <path d="M20 7L33 31H7L20 7Z" fill="white" fill-opacity="0.95"/>
+            <path d="M20 15L28 31H12L20 15Z" fill="#1a56db"/>
+            <circle cx="20" cy="27" r="3.5" fill="white"/>
+          </svg>
+          <span class="brand-text">AstraMind <span class="accent">Labs</span></span>
+        </span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <div class="nav-menu-wrapper">
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="methodology.html" class="nav-link">Methodology</a></li>
+            <li><a href="products.html" class="nav-link">Products</a></li>
+            <li><a href="industries.html" class="nav-link">Industries</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="careers.html" class="nav-link active">Careers</a></li>
+            <li><a href="insights.html" class="nav-link">Insights</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-controls">
+          <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+            <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </button>
+
+          <a href="contact.html" class="btn btn-primary btn-sm">Schedule Consultation</a>
+        </div>
+      </div>
+
+      <!-- Mobile Toggle Button -->
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Open navigation menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-link">Home</a></li>
+      <li><a href="services.html" class="mobile-link">Services & Capabilities</a></li>
+      <li><a href="methodology.html" class="mobile-link">Engineering Methodology</a></li>
+      <li><a href="products.html" class="mobile-link">Proprietary Products</a></li>
+      <li><a href="industries.html" class="mobile-link">Industry Solutions</a></li>
+      <li><a href="about.html" class="mobile-link">Leadership & Governance</a></li>
+      <li><a href="careers.html" class="mobile-link active">Careers</a></li>
+      <li><a href="insights.html" class="mobile-link">Insights & Research</a></li>
+      <li><a href="contact.html" class="mobile-link">Contact & Consultation</a></li>
+    </ul>
+
+    <div class="mobile-theme-row">
+      <span>Color Theme</span>
+      <button id="mobile-theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      </button>
+    </div>
+
+    <div style="margin-top: 1.5rem;">
+      <a href="contact.html" class="btn btn-primary btn-block">Get in Touch</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==================== PAGE HERO ==================== -->
+    <section class="page-hero">
+      <div class="container page-hero-content">
+        <span class="eyebrow">Join AstraMind Labs</span>
+        <h1 class="page-hero-title">Build High-Impact Technology in Africa</h1>
+        <p class="page-hero-subtitle">
+          Work with ambitious engineers and researchers tackling foundational problems with machine learning, cloud engineering, and modern software architectures.
+        </p>
+      </div>
+    </section>
+
+    <!-- ==================== CAREERS DUAL LAYOUT ==================== -->
+    <section class="section">
+      <div class="container">
+        <div class="careers-dual-layout">
+          <div>
+            <span class="eyebrow">Engineering Culture</span>
+            <h2 class="section-title" style="text-align:left;">Why Build With Us?</h2>
+            <p style="font-size:1.05rem; line-height:1.8; margin-bottom: 2rem;">
+              We are creating a culture where ambitious people learn rapidly, take full ownership, and work on meaningful products that make a tangible difference across Malawi and the continent.
+            </p>
+
+            <div class="careers-value-bullets">
+              <div class="career-perk-row">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                <span>Rapid merit-based ownership of production systems</span>
+              </div>
+              <div class="career-perk-row">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                <span>Direct impact on African education, agriculture & fintech</span>
+              </div>
+              <div class="career-perk-row">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                <span>Access to cutting-edge compute, AI libraries & mentorship</span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3 style="font-size:1.35rem; font-weight:700; margin-bottom:1.5rem;">Open Positions</h3>
+            <div class="job-openings-stack">
+              <!-- Job 1 -->
+              <div class="job-listing-box">
+                <div class="job-header-row">
+                  <span class="job-division-badge">AI / Machine Learning</span>
+                  <span class="job-loc-badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    Lilongwe, Malawi (Hybrid)
+                  </span>
+                </div>
+                <h4>AI Research Intern</h4>
+                <p>Work on African-language NLP datasets, acoustic voice models, and low-resource transformer fine-tuning for educational tutors.</p>
+                <button class="btn btn-outline btn-sm btn-job-apply" data-job="AI Research Intern">Apply for Position &rarr;</button>
+              </div>
+
+              <!-- Job 2 -->
+              <div class="job-listing-box">
+                <div class="job-header-row">
+                  <span class="job-division-badge">Software Engineering</span>
+                  <span class="job-loc-badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    Lilongwe, Malawi (On-site)
+                  </span>
+                </div>
+                <h4>Junior Full-Stack Developer</h4>
+                <p>Build responsive web applications, secure REST APIs, and digital platform interfaces with modern TypeScript & React stacks.</p>
+                <button class="btn btn-outline btn-sm btn-job-apply" data-job="Junior Full-Stack Developer">Apply for Position &rarr;</button>
+              </div>
+
+              <!-- Job 3 -->
+              <div class="job-listing-box">
+                <div class="job-header-row">
+                  <span class="job-division-badge">Infrastructure & Cloud</span>
+                  <span class="job-loc-badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    Remote / Hybrid
+                  </span>
+                </div>
+                <h4>Cloud & Operations Intern</h4>
+                <p>Configure Linux VPS instances, automate Docker deployments, configure backup snapshots, and monitor uptime telemetry.</p>
+                <button class="btn btn-outline btn-sm btn-job-apply" data-job="Cloud & Operations Intern">Apply for Position &rarr;</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== CAREERS APPLICATION MODAL ==================== -->
+  <div class="modal-overlay-shell" id="career-app-modal">
+    <div class="modal-inner-card">
+      <button class="modal-dismiss-btn" id="modal-dismiss-btn" aria-label="Close Modal">&times;</button>
+      <h3 class="modal-heading">Apply for Position</h3>
+      <p class="modal-subheading" id="selected-role-name">Position Title</p>
+
+      <form id="career-application-form" enctype="multipart/form-data">
+        <div class="form-group-item">
+          <label for="applicant-name">Full Name *</label>
+          <input type="text" id="applicant-name" placeholder="Thokozani Phiri" required>
+        </div>
+        <div class="form-group-item">
+          <label for="applicant-email">Email Address *</label>
+          <input type="email" id="applicant-email" placeholder="thokozani@example.com" required>
+        </div>
+        <div class="form-group-item">
+          <label for="applicant-phone">Phone Number *</label>
+          <input type="tel" id="applicant-phone" placeholder="+265 ..." required>
+        </div>
+        <div class="form-group-item">
+          <label for="applicant-cv">Upload CV / Resume *</label>
+          <input type="file" id="applicant-cv" name="cv" accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" required>
+          <small class="form-help-text">Accepted formats: PDF, DOC, or DOCX (maximum 5 MB).</small>
+        </div>
+        <div class="form-group-item">
+          <label for="applicant-note">Short Cover Note *</label>
+          <textarea id="applicant-note" rows="3" placeholder="Tell us why you want to build technology with AstraMind Labs..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Submit Application</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="toast-notice" class="toast-notice">Application submitted successfully!</div>
+
+  <!-- ==================== CORPORATE FOOTER ==================== -->
+  <footer class="corporate-footer">
+    <div class="container">
+      <div class="footer-columns-grid">
+        <div>
+          <a href="index.html" aria-label="AstraMind Labs Home">
+            <img src="assets/logo.png" alt="AstraMind Labs" class="footer-brand-logo" onerror="this.style.display='none'; document.getElementById('footer-fallback-brand').style.display='block';">
+            <span id="footer-fallback-brand" style="display:none; font-family:var(--font-heading); font-size:1.4rem; font-weight:800; color:#fff; margin-bottom:1rem;">AstraMind Labs</span>
+          </a>
+          <p class="footer-tagline">
+            AstraMind Labs is a Malawi-based AI-first technology company building intelligent software, cloud solutions and digital products for African challenges and global opportunity.
+          </p>
+        </div>
+
+        <div class="footer-col-block">
+          <h4>Navigation</h4>
+          <div class="footer-links-list">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services & Capabilities</a>
+            <a href="methodology.html">Engineering Methodology</a>
+            <a href="products.html">Proprietary Products</a>
+          </div>
+        </div>
+
+        <div class="footer-col-block">
+          <h4>Company</h4>
+          <div class="footer-links-list">
+            <a href="about.html">About & Leadership</a>
+            <a href="industries.html">Industry Solutions</a>
+            <a href="careers.html">Careers</a>
+            <a href="insights.html">Insights & Research</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <div class="footer-col-block">
+          <h4>Legal & Trust</h4>
+          <div class="footer-links-list">
+            <a href="contact.html#faq">Privacy Policy</a>
+            <a href="contact.html#faq">Terms of Engagement</a>
+            <a href="contact.html#faq">Security Standards</a>
+            <a href="contact.html#faq">IP Ownership Policy</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p>&copy; 2026 AstraMind Labs. All rights reserved. Prepared in accordance with the AstraMind Labs Corporate Charter.</p>
+        <p>Area 3, Lilongwe, Malawi • Intelligent Technology Built for Impact</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Back to Top" title="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
