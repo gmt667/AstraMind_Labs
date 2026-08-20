@@ -72,9 +72,31 @@ function initMultiPageNavActive() {
   });
 
   if (mobileToggle && mobileDrawer) {
+    mobileToggle.setAttribute('aria-controls', 'mobile-drawer');
+    mobileToggle.setAttribute('aria-expanded', 'false');
+
+    const setMobileMenuState = (isOpen) => {
+      mobileDrawer.classList.toggle('open', isOpen);
+      mobileToggle.setAttribute('aria-expanded', String(isOpen));
+      mobileToggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    };
+
     mobileToggle.addEventListener('click', () => {
-      mobileDrawer.classList.toggle('open');
+      setMobileMenuState(!mobileDrawer.classList.contains('open'));
     });
+
+    mobileDrawer.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => setMobileMenuState(false));
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') setMobileMenuState(false);
+    });
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) setMobileMenuState(false);
+    }, { passive: true });
   }
 }
 

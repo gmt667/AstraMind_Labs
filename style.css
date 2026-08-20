@@ -2474,26 +2474,90 @@ img {
 }
 
 @media (max-width: 768px) {
-  .section { padding: 4.25rem 0; }
-  .section-title { font-size: 2.15rem; }
-  .hero-title { font-size: 2.4rem; }
-  .page-hero-title { font-size: 2.2rem; }
+  .container,
+  .nav-container { padding-left: 1.15rem; padding-right: 1.15rem; }
+  .section { padding: 3.75rem 0; }
+  .section-header { margin-bottom: 2.5rem; }
+  .section-title { font-size: clamp(1.8rem, 8vw, 2.15rem); overflow-wrap: anywhere; }
+  .section-subtitle { font-size: 1rem; }
+  .hero-title { font-size: clamp(2rem, 10vw, 2.4rem); overflow-wrap: anywhere; }
+  .page-hero-title { font-size: clamp(1.9rem, 9vw, 2.2rem); overflow-wrap: anywhere; }
   .hero-actions { flex-direction: column; }
   .hero-actions .btn { width: 100%; }
   .hero-metrics-bar { grid-template-columns: 1fr; gap: 1.25rem; }
   .nav-menu-wrapper { display: none; }
   .mobile-toggle { display: block; }
+  .mobile-drawer { width: min(100%, 360px); padding: 1.5rem 1.15rem; }
+  .brand-logo { max-width: 150px; height: 34px; }
+  .brand-fallback-wrap .brand-text { font-size: 1.12rem; }
+  .nav-controls { gap: 0.45rem; }
   .services-catalog { grid-template-columns: 1fr; }
   .industry-cards-grid { grid-template-columns: 1fr; }
   .corporate-values-grid { grid-template-columns: 1fr; }
   .standards-five-col { grid-template-columns: 1fr; }
   .insights-article-grid { grid-template-columns: 1fr; }
+  .enterprise-models-grid { grid-template-columns: 1fr; }
   .form-two-col { grid-template-columns: 1fr; }
-  .enterprise-form-shell { padding: 2rem 1.5rem; }
-  .modal-inner-card { padding: 2rem 1.5rem; }
+  .enterprise-form-shell,
+  .contact-info-widget,
+  .quote-highlight-card { padding: 1.6rem 1.15rem; }
+  .lifecycle-display-panel { padding: 1.6rem 1.15rem; }
+  .panel-step-headline { font-size: 1.65rem; margin-bottom: 1.25rem; }
+  .panel-action-text,
+  .panel-purpose-text { padding: 0.9rem 1rem; }
+  .pip-card,
+  .team-bio-card,
+  .service-detail-card,
+  .industry-card,
+  .value-card,
+  .insight-post-card,
+  .job-listing-box { padding: 1.5rem 1.15rem; }
+  .team-bio-top { flex-direction: column; }
+  .team-title-block,
+  .pip-card-header > div:last-child { min-width: 0; }
+  .team-affiliation-tag { align-items: flex-start; overflow-wrap: anywhere; }
+  .job-header-row { align-items: flex-start; flex-direction: column; gap: 0.6rem; }
+  .job-loc-badge { align-items: flex-start; }
+  .contact-info-line { gap: 0.85rem; }
+  .contact-info-line a,
+  .contact-info-line p { overflow-wrap: anywhere; }
+  .modal-overlay-shell { align-items: flex-start; padding: 0.75rem; overflow-y: auto; }
+  .modal-inner-card { padding: 2.2rem 1.15rem 1.35rem; max-height: none; margin: 0.5rem 0; }
+  .modal-dismiss-btn { top: 0.75rem; right: 0.75rem; }
+  .toast-notice { left: 1rem; right: 1rem; bottom: 1rem; max-width: none; transform: translateY(calc(100% + 2rem)); transition: transform 0.35s ease; }
+  .toast-notice.show { right: 1rem; transform: translateY(0); }
   .footer-columns-grid { grid-template-columns: 1fr; gap: 2.5rem; }
   .footer-bottom-bar { flex-direction: column; text-align: center; }
   .trust-strip-inner { flex-direction: column; align-items: flex-start; }
   .tech-stack-inner { gap: 1rem; }
   .back-to-top-btn { bottom: 1.25rem; right: 1.25rem; width: 40px; height: 40px; }
+}
+
+@media (max-width: 480px) {
+  .navbar { height: 70px; }
+  .navbar.scrolled { height: 66px; }
+  .mobile-drawer { top: 70px; height: calc(100dvh - 70px); width: 100%; border-left: 0; }
+  .theme-toggle-btn { width: 38px; height: 38px; }
+  .brand-logo { max-width: 132px; }
+  .brand-fallback-wrap .svg-logo-icon { width: 31px; height: 31px; }
+  .brand-fallback-wrap .brand-text { font-size: 1rem; }
+  .section { padding: 3.1rem 0; }
+  .eyebrow { max-width: 100%; font-size: 0.7rem; letter-spacing: 1px; text-align: left; }
+  .btn { width: 100%; padding: 0.82rem 1rem; white-space: normal; text-align: center; }
+  .pip-card-header { gap: 0.85rem; }
+  .pip-icon-box { width: 44px; height: 44px; }
+  .pip-title { font-size: 1.25rem; }
+  .cycle-step-btn { padding: 0.95rem 1rem; gap: 0.75rem; }
+  .cycle-num { min-width: 24px; }
+  .team-credentials-block { padding: 1rem 0.85rem; }
+  .credential-item { font-size: 0.82rem; }
+  .focus-tags span { max-width: 100%; overflow-wrap: anywhere; }
+  .cta-banner-section { padding: 3.75rem 0; }
+  .cta-banner-section h2 { font-size: 1.85rem; overflow-wrap: anywhere; }
+  .cta-banner-section p { font-size: 1rem; }
+  .corporate-footer { padding: 3.75rem 0 2rem; }
+  .footer-columns-grid { padding-bottom: 2.5rem; }
+  .form-group-item input,
+  .form-group-item select,
+  .form-group-item textarea { font-size: 16px; }
 }
